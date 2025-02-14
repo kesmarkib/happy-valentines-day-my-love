@@ -16,6 +16,7 @@ present_top.addEventListener("click", ()=> {
     document.getElementById("title-card").innerHTML = "Happy Valentine's Day!"
     document.getElementById("hub").style.width = "100%";
     document.getElementById("hub").style.height = "100%";
+    document.getElementById("hub").style.overflow = "scroll";
     present.style.width = "0";
     present.style.width = "0";
     present.style.overflow = "hidden";
