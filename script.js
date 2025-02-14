@@ -1,3 +1,29 @@
+const present = document.getElementById("present");
+const present_top = document.getElementById("present-top");
+let clicks = 0;
+
+present_top.addEventListener("click", ()=> {
+  present_top.style.scale = "1.1"
+  present_top.style.top = "100px";
+  setTimeout(() =>{present_top.style.scale = "1"}, 50)
+  clicks += 1;
+
+  if(clicks >= 3){
+    clicks = 0;
+    present_top.animate([{ transform: "rotate(0) scale(1)"},{transform: "rotate(360deg) scale(0)"}],{duration: 500, iterations: 1})
+    setTimeout(()=>{present_top.remove()},500)
+
+    document.getElementById("title-card").innerHTML = "Happy Valentine's Day!"
+    document.getElementById("hub").style.width = "100%";
+    document.getElementById("hub").style.height = "100%";
+    present.style.width = "0";
+    present.style.width = "0";
+    present.style.overflow = "hidden";
+  }
+})
+
+
+
 const timer = document.getElementById("timer")
 const progress_bar = document.getElementById("progress-bar")
 const time_together = document.getElementById("time-together")
@@ -74,7 +100,7 @@ function spawnHearts(){
   const widthPx = screen.width
   const ySpawn = screen.height + 100
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     const randIntX = Math.floor(Math.random() *  widthPx);
     const randIntY = Math.floor(Math.random() * 600);
     

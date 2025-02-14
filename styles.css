@@ -10,14 +10,31 @@ body, html{
     height: 100%;
 }
 
-#hub{
+#present{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+}
+
+#present-top{
+    margin-bottom: -370px;
+    z-index: 2;
+}
+
+#hub{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 @keyframes rotate {
@@ -28,7 +45,7 @@ body, html{
 #title-card{
     position: absolute;
     top: 50px;
-    font-size: 30pt;
+    font-size: 20pt;
     animation: rotate 2s infinite alternate ease-in-out;
 }
 
