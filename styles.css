@@ -115,6 +115,8 @@ body, html{
 h3{
     margin: 10px;
     font-size: 10pt;
+    font-style: italic;
+    font-stretch: semi-expanded;
 }
 
 #ily{
