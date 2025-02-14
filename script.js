@@ -71,7 +71,7 @@ function updateCountdown(targetDate) {
     const overall_diff = new Date(end_date) - new Date(last_date);
     const percentage = diff / overall_diff * 100
 
-    progress_bar.style.backgroundImage = `linear-gradient(to right, aquamarine ${percentage}%, rgba(0,0,0,0) ${percentage}%)`
+    progress_bar.style.backgroundImage = `linear-gradient(to right, rgb(238, 104, 104) ${100 - percentage}%, rgba(0,0,0,0) ${100 - percentage}%)`
   }
 
   calculateTimeRemaining();

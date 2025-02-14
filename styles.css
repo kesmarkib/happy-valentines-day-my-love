@@ -51,7 +51,7 @@ body, html{
 
 
 #time-together{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -59,6 +59,13 @@ body, html{
     height: auto;
     font-size: 20pt;
     margin-bottom: -30px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
 }
 
 #together-for{
@@ -107,7 +114,7 @@ body, html{
 
 h3{
     margin: 10px;
-    font-size: 15pt;
+    font-size: 10pt;
 }
 
 #ily{
