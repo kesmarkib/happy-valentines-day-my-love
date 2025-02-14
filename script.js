@@ -136,7 +136,7 @@ function moveHearts(){
     if(pos < -100){
       heart.remove();
     }else{
-      heart.style.top = `${pos - 10}px`
+      heart.style.top = `${pos - 7}px`
     }
   })
 }
